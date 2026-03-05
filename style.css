@@ -44,14 +44,6 @@ header > h2 {
     line-height: 1.5;
 }
 
-header nav {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding-left: 20px;
-    padding-bottom: 5px;
-}
-
 .grid-menu {
     position: -webkit-sticky;
     position: sticky;
@@ -67,10 +59,13 @@ header nav {
     box-sizing: border-box;
 }
 
-nav > a {
+.grid-menu > a {
     color: rgba(255, 255, 255, 0.658);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    white-space: nowrap; /* Impede que o texto "Notícias" quebre em duas linhas */
+    transition: 0.3s;
 }
 
 nav > a:hover {
